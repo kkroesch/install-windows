@@ -24,32 +24,26 @@
       - sysinternals
       - 7zip
       - nxlog
-      - wireshark
-      - doublecmd
-      - osquery
-      - jq
       - nmap
+      - wireshark
+      - osquery
       - pstools
 
   - name: Install Productivity Software
     tags: [productivity]
     win_chocolatey:
       name:
-      - alacritty
-      - gnupg
-      - imagemagick
-      - jiracli
-      - latexdraw
-      - marktext
-      - microsoft-windows-terminal
-      - miktex
       - mobaxterm
+      - alacritty
+      - doublecmd
+      - marktext
       - neovim
       - notable
-      - nteract
       - pandoc
+      - gnupg
+      - gpg4win
+      - gopass
       - qtpass
-      - texstudio
       state: present
 
   - name: Install Programming Languages
@@ -67,6 +61,7 @@
     tags: [development]
     win_chocolatey:
       name:
+      - jq
       - cmake
       - dbeaver
       - git.install
@@ -75,9 +70,6 @@
       - pycharm
       - pypy3
       - pyqt5
-      - vagrant
-      - vagrant-manager
-      - qemu
 
   - name: Install Cloud Tools
     tags: [cloud]
@@ -88,7 +80,32 @@
       - docker-desktop
       - dive
       - ctop
+      - vagrant
+      - vagrant-manager
+      - qemu
 
+  - name: Install Science Applications
+    tags: [science]
+    win_chocolatey:
+      name:
+        - miktex
+        - latexdraw
+        - nteract
+        - texstudio
+        - r.project
+        - r.studio
+
+  - name: Install Creativity / Multimedia
+    tags: [creative]
+    win_chocolatey:
+      name:
+        - digikam
+        - blender
+        - audacity
+        - audacity-lame
+        - audacity-ffmpeg
+        - imagemagick
+  
   - name: Install Making Tools
     tags: [make]
     win_chocolatey:
@@ -97,5 +114,3 @@
       - kicad
       - vscode-arduino
       - fritzing
-      - digikam
-      - blender
