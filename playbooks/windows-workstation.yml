@@ -1,0 +1,101 @@
+---
+- hosts: 127.0.0.1
+  connection: local
+
+- tasks:
+
+  - name: Ensure Chocolatey itself is installed and use internal repo as source
+    win_chocolatey:
+        name: chocolatey
+        source: http://someserver/chocolatey
+
+  - name: Install Browsers
+    tags: [browser]
+    win_chocolatey:
+      name:
+      - firefox
+      - brave
+
+  - name: Install System Tools
+    tags: [systools]
+    win_chocolatey:
+      name:
+      - openssh
+      - sysinternals
+      - 7zip
+      - nxlog
+      - wireshark
+      - doublecmd
+      - osquery
+      - jq
+      - nmap
+      - pstools
+
+  - name: Install Productivity Software
+    tags: [productivity]
+    win_chocolatey:
+      name:
+      - alacritty
+      - gnupg
+      - imagemagick
+      - jiracli
+      - latexdraw
+      - marktext
+      - microsoft-windows-terminal
+      - miktex
+      - mobaxterm
+      - neovim
+      - notable
+      - nteract
+      - pandoc
+      - qtpass
+      - texstudio
+      state: present
+
+  - name: Install Programming Languages
+    tags: [programming]
+    win_chocolatey:
+      name:
+      - python
+      - nodejs.install
+      - qtcreator
+      - golang
+      - julia
+      - visualstudio2019community
+
+  - name: Install Development Tools
+    tags: [development]
+    win_chocolatey:
+      name:
+      - cmake
+      - dbeaver
+      - git.install
+      - gitea
+      - insomnia-rest-api-client
+      - pycharm
+      - pypy3
+      - pyqt5
+      - vagrant
+      - vagrant-manager
+      - qemu
+
+  - name: Install Cloud Tools
+    tags: [cloud]
+    win_chocolatey:
+      name:
+      - cloudfoundry-cli
+      - docker-cli
+      - docker-desktop
+      - dive
+      - ctop
+
+  - name: Install Making Tools
+    tags: [make]
+    win_chocolatey:
+      name:
+      - freecad
+      - kicad
+      - vscode-arduino
+      - fritzing
+      - digikam
+      - blender
