@@ -57,7 +57,6 @@
       - nodejs.install
       - qtcreator
       - golang
-      - julia
       - visualstudio2019community
 
   - name: Install Development Tools
@@ -91,23 +90,24 @@
     tags: [science]
     win_chocolatey:
       name:
-        - miktex
-        - latexdraw
-        - nteract
-        - texstudio
-        - r.project
-        - r.studio
+      - miktex
+      - latexdraw
+      - nteract
+      - texstudio
+      - r.project
+      - r.studio
+      - julia
 
   - name: Install Creativity / Multimedia
     tags: [creative]
     win_chocolatey:
       name:
-        - digikam
-        - blender
-        - audacity
-        - audacity-lame
-        - audacity-ffmpeg
-        - imagemagick
+      - digikam
+      - blender
+      - audacity
+      - audacity-lame
+      - audacity-ffmpeg
+      - imagemagick
   
   - name: Install Making Tools
     tags: [make]
