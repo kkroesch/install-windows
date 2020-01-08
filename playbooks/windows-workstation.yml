@@ -4,6 +4,9 @@
 
 - tasks:
   
+  - name: Enable Windows Subsystem for Linux (WSL)
+    win_shell: "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux"
+  
   - name: Install Chocolatey
     win_shell: "Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
 
