@@ -23,6 +23,7 @@
     tags: [systools]
     win_chocolatey:
       name:
+      - clink
       - openssh
       - sysinternals
       - 7zip
