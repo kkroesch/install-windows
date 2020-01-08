@@ -43,6 +43,7 @@
       - mobaxterm
       - alacritty
       - doublecmd
+      - vscode
       - marktext
       - neovim
       - notable
