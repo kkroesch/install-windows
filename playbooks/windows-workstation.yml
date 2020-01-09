@@ -35,6 +35,7 @@
       - wireshark
       - osquery
       - pstools
+      - elevate
 
   - name: Install Productivity Software
     tags: [productivity]
