@@ -35,7 +35,7 @@
       - wireshark
       - osquery
       - pstools
-      - elevate
+      - elevate.native
 
   - name: Install Productivity Software
     tags: [productivity]
