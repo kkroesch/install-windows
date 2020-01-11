@@ -109,6 +109,7 @@
     win_chocolatey:
       name:
       - digikam
+      - imageglass
       - blender
       - audacity
       - audacity-lame
