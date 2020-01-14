@@ -21,6 +21,7 @@
       name:
       - firefox
       - brave
+      state: present
 
   - name: Install System Tools
     tags: [systools]
@@ -36,6 +37,7 @@
       - osquery
       - pstools
       - elevate.native
+      state: present
 
   - name: Install Productivity Software
     tags: [productivity]
@@ -64,6 +66,7 @@
       - qtcreator
       - golang
       - visualstudio2019community
+      state: present
 
   - name: Install Development Tools
     tags: [development]
@@ -78,6 +81,7 @@
       - pycharm
       - pypy3
       - pyqt5
+      state: present
 
   - name: Install Cloud Tools
     tags: [cloud]
@@ -91,6 +95,7 @@
       - vagrant
       - vagrant-manager
       - qemu
+      state: present
 
   - name: Install Science Applications
     tags: [science]
@@ -103,6 +108,7 @@
       - r.project
       - r.studio
       - julia
+      state: present
 
   - name: Install Creativity / Multimedia
     tags: [creative]
@@ -115,6 +121,7 @@
       - audacity-lame
       - audacity-ffmpeg
       - imagemagick
+      state: present
   
   - name: Install Making Tools
     tags: [make]
@@ -124,3 +131,4 @@
       - kicad
       - vscode-arduino
       - fritzing
+      state: present
