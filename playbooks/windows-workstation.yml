@@ -55,6 +55,7 @@
       - gpg4win
       - gopass
       - qtpass
+      - postgresql11
       state: present
 
   - name: Install Programming Languages
