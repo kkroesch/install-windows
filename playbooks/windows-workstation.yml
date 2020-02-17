@@ -109,6 +109,7 @@
       - r.project
       - r.studio
       - julia
+      - qgis
       state: present
 
   - name: Install Creativity / Multimedia
